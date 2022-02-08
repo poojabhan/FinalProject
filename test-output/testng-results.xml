@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16532" started-at="2022-02-07T21:55:30 EST" finished-at="2022-02-07T21:55:47 EST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16532" started-at="2022-02-07T21:55:30 EST" finished-at="2022-02-07T21:55:47 EST">
+      <class name="testcases.TC005_GiftCert">
+        <test-method status="PASS" signature="VerifyGiftCert()[pri:0, instance:testcases.TC005_GiftCert@5e0826e7]" name="VerifyGiftCert" duration-ms="3850" started-at="2022-02-07T21:55:43 EST" finished-at="2022-02-07T21:55:47 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGiftCert -->
+      </class> <!-- testcases.TC005_GiftCert -->
+      <class name="testcases.TC002_Login">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.TC002_Login@14dd9eb7]" name="init" is-config="true" duration-ms="5765" started-at="2022-02-07T21:55:24 EST" finished-at="2022-02-07T21:55:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:testcases.TC002_Login@14dd9eb7]" name="VerifyLogin" duration-ms="1960" started-at="2022-02-07T21:55:30 EST" finished-at="2022-02-07T21:55:32 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002_Login@14dd9eb7]" name="tearDown" is-config="true" duration-ms="1024" started-at="2022-02-07T21:55:47 EST" finished-at="2022-02-07T21:55:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC002_Login -->
+      <class name="testcases.TC004Returns">
+        <test-method status="PASS" signature="VerifyReturn()[pri:0, instance:testcases.TC004Returns@6dc17b83]" name="VerifyReturn" duration-ms="4242" started-at="2022-02-07T21:55:39 EST" finished-at="2022-02-07T21:55:43 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReturn -->
+      </class> <!-- testcases.TC004Returns -->
+      <class name="testcases.TC003_AddToCart">
+        <test-method status="PASS" signature="VerifyCart()[pri:0, instance:testcases.TC003_AddToCart@5fdcaa40]" name="VerifyCart" duration-ms="6414" started-at="2022-02-07T21:55:32 EST" finished-at="2022-02-07T21:55:39 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCart -->
+      </class> <!-- testcases.TC003_AddToCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
