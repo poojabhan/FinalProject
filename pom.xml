@@ -20,14 +20,14 @@
 			<artifactId>selenium-java</artifactId>
 			<version>2.53.1</version>
 		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
+		
+  <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.40.2</version>
+</dependency>
+  
 
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
 		<dependency>
@@ -79,6 +79,12 @@
 			<artifactId>xmlbeans</artifactId>
 			<version>2.3.0</version>
 		</dependency>
+		 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		 <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.5</version>
+</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
 		<dependency>
@@ -89,7 +95,7 @@
 	</dependencies>
 	<profiles>
 	<profile>
-	<id>smoke</id>
+	<id>functional1</id>
 	<build>
 		<plugins>
 			<plugin>
@@ -108,7 +114,7 @@
 	</profile>
 	
 	<profile>
-	<id>regression</id>
+	<id>functional2</id>
 	<build>
 		<plugins>
 			<plugin>

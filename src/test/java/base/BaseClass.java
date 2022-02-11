@@ -18,21 +18,25 @@ import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.ExtentManager;
 
 
 public class BaseClass {
-    //initialized webdriver, created object named config 
+    //initialized webdriver, created object config, test and extent 
 
 	public static Properties config = new Properties();
 	public static WebDriver driver = null;
-	public ExtentReports rep = ExtentManager.getInstance();
+	//Initialized test object of Extent class
 	public static ExtentTest test;
-	
+	static ExtentReports extent = ExtentManager.getInstance();
+
 
 	@BeforeSuite()
-	public static void init() throws IOException {
+	public static void init() throws IOException  {
+		 test=extent.startTest("Start Test");
+
 		if (driver == null) {
 			// load config property file
 			FileInputStream fis = new FileInputStream(
@@ -41,13 +45,17 @@ public class BaseClass {
 			
 	       //Load the chrome browser
 			config.getProperty("browser").equals("chrome"); {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\executables\\chromedriver.exe");
+				//Initialized the path for Chrome driver extention
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\src\\test\\resources\\executables1\\chromedriver.exe");
 				driver = new ChromeDriver();
 		
 			} 
-
+			//
+			test.log(LogStatus.INFO, "Launched the website url"); 
 			driver.get(config.getProperty("testsiteURL"));
-			driver.manage().window().maximize();
+			test.log(LogStatus.INFO, "Maximized the window");
+			driver.manage().window().maximize(); 
+			
 
 			// Global implicit Wait
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -55,10 +63,15 @@ public class BaseClass {
 		}
 	}
 	
-	
 	@AfterSuite()
 	public static void tearDown() {
-		
-		BaseClass.driver.quit();
+		//End the test
+	extent.endTest(test);
+	//Flush the report
+	extent.flush();
+		if(driver!=null) {
+			  driver.quit();
+			  System.out.println("The browser has closed");
+			 	}
 	}
 }

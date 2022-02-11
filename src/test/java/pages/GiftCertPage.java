@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import base.BasePage;
 
 public class GiftCertPage extends BasePage {
-    
+	//Constructor
 	public GiftCertPage(WebDriver driver) {
 		super(driver);
 	}

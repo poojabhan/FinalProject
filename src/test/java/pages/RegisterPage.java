@@ -59,7 +59,6 @@ public class RegisterPage extends BasePage{
 		mycontinue.click();
 		System.out.println(mymesage);
 		
-			
 		}
 
 }

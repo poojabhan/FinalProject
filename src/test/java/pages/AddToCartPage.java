@@ -12,7 +12,7 @@ public class AddToCartPage extends BasePage {
 
 	private static final JavascriptExecutor driver = null;
 
-
+    //Constructor
 	public AddToCartPage(WebDriver driver) {
 		super(driver);
 	}
