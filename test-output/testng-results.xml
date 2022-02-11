@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12415" started-at="2022-02-10T20:55:56 EST" finished-at="2022-02-10T20:56:09 EST">
+  <suite name="Default suite" duration-ms="34883" started-at="2022-02-10T21:13:59 EST" finished-at="2022-02-10T21:14:34 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12415" started-at="2022-02-10T20:55:56 EST" finished-at="2022-02-10T20:56:09 EST">
-      <class name="testcases.TC005_GiftCert">
-        <test-method status="PASS" signature="VerifyGiftCert()[pri:0, instance:testcases.TC005_GiftCert@4466af20]" name="VerifyGiftCert" duration-ms="2844" started-at="2022-02-10T20:56:06 EST" finished-at="2022-02-10T20:56:09 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyGiftCert -->
-      </class> <!-- testcases.TC005_GiftCert -->
-      <class name="testcases.TC002_Login">
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.TC002_Login@694abbdc]" name="init" is-config="true" duration-ms="6176" started-at="2022-02-10T20:55:50 EST" finished-at="2022-02-10T20:55:56 EST">
+    <test name="Default test" duration-ms="34883" started-at="2022-02-10T21:13:59 EST" finished-at="2022-02-10T21:14:34 EST">
+      <class name="testcases.TC001_Register">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.TC001_Register@661972b0]" name="init" is-config="true" duration-ms="7999" started-at="2022-02-10T21:13:51 EST" finished-at="2022-02-10T21:13:59 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:testcases.TC002_Login@694abbdc]" name="VerifyLogin" duration-ms="1449" started-at="2022-02-10T20:55:56 EST" finished-at="2022-02-10T20:55:58 EST">
+        <test-method status="PASS" signature="VerifyRegister()[pri:0, instance:testcases.TC001_Register@661972b0]" name="VerifyRegister" duration-ms="34797" started-at="2022-02-10T21:13:59 EST" finished-at="2022-02-10T21:14:34 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002_Login@694abbdc]" name="tearDown" is-config="true" duration-ms="1164" started-at="2022-02-10T20:56:09 EST" finished-at="2022-02-10T20:56:10 EST">
+        </test-method> <!-- VerifyRegister -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001_Register@661972b0]" name="tearDown" is-config="true" duration-ms="1144" started-at="2022-02-10T21:14:34 EST" finished-at="2022-02-10T21:14:35 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC002_Login -->
-      <class name="testcases.TC003_AddToCart">
-        <test-method status="PASS" signature="VerifyCart()[pri:0, instance:testcases.TC003_AddToCart@1fa268de]" name="VerifyCart" duration-ms="4541" started-at="2022-02-10T20:55:58 EST" finished-at="2022-02-10T20:56:02 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCart -->
-      </class> <!-- testcases.TC003_AddToCart -->
-      <class name="testcases.TC004_Returns">
-        <test-method status="PASS" signature="VerifyReturn()[pri:0, instance:testcases.TC004_Returns@4f6ee6e4]" name="VerifyReturn" duration-ms="3505" started-at="2022-02-10T20:56:02 EST" finished-at="2022-02-10T20:56:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyReturn -->
-      </class> <!-- testcases.TC004_Returns -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcases.TC001_Register -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

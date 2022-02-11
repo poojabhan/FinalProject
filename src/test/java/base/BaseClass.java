@@ -71,7 +71,7 @@ public class BaseClass {
 	extent.flush();
 		if(driver!=null) {
 			  driver.quit();
-			  System.out.println("The browser has closed");
+			  System.out.println("The browser has closed successfully");
 			 	}
 	}
 }
